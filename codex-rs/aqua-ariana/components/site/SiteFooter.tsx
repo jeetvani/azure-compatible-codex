@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { Container } from "@/components/ui";
+import s from "./site.module.css";
+export function SiteFooter() { return <footer className={s.footer}><Container><div className={s.footerGrid}><div className={s.footerBrand}><Link href="/" className={s.wordmark}>Aqua Ariana</Link><p className={s.note}>Bottled drinking water</p></div><nav className={s.footerNav} aria-label="Footer navigation"><Link href="/#shop">Shop</Link><Link href="/cart">Cart</Link><Link href="/pickup">Pickup</Link></nav><div className={s.footerDetails}><p>Pickup only · San Francisco, California</p><p>Street address to be confirmed.</p></div></div><div className={s.footerBottom}><p>Online ordering is not available yet.</p><p>Purchase policies are being confirmed.</p></div></Container></footer>; }

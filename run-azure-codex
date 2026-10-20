@@ -1,0 +1,10 @@
+#!/bin/zsh
+set -euo pipefail
+
+SCRIPT_DIR=${0:A:h}
+set -a
+source "$SCRIPT_DIR/.env"
+set +a
+
+cd "$SCRIPT_DIR/codex-rs"
+exec cargo run --bin codex -- "$@"

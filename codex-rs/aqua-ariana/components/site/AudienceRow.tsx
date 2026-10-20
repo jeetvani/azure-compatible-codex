@@ -1,0 +1,3 @@
+import s from "./home.module.css";
+const audiences = [ ["Offices", "Review bottle sizes and quantities for your workplace. Confirm the pickup details before making plans for an order."], ["Events", "Use the product details to plan bottled water quantities for your event. Check pickup arrangements before placing an order."], ["Restaurants and shops", "Compare bottle sizes and selling units for your business when the catalog is available. Review pickup information before ordering."] ];
+export function AudienceRow() { return <div className={s.audienceRow}>{audiences.map(([title,copy]) => <div className={s.audience} key={title}><h3>{title}</h3><p>{copy}</p></div>)}</div>; }

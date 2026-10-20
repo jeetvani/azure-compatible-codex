@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/appointment-request/layout,_N_T_/appointment-request/page,_N_T_/appointment-request"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/appointment-request/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/bd19d2117a2027141f7b936ef633c3f81cd87e4ab4146cc014bcf901431a1f59/$/appointment-request",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/appointment-request/page"
+    },
+    "isFallback": false
+  }
+}
